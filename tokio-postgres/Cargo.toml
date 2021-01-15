@@ -1,11 +1,11 @@
 [package]
-name = "tokio-postgres"
+name = "prisma-tokio-postgres"
 version = "0.7.0"
-authors = ["Steven Fackler <sfackler@gmail.com>"]
+authors = ["Steven Fackler <sfackler@gmail.com>", "Julius de Bruijn <bruijn@prisma.io>"]
 edition = "2018"
 license = "MIT/Apache-2.0"
 description = "A native, asynchronous PostgreSQL client"
-repository = "https://github.com/sfackler/rust-postgres"
+repository = "https://github.com/pimeys/rust-postgres"
 readme = "../README.md"
 keywords = ["database", "postgres", "postgresql", "sql", "async"]
 categories = ["database"]
@@ -19,9 +19,6 @@ harness = false
 
 [package.metadata.docs.rs]
 all-features = true
-
-[badges]
-circle-ci = { repository = "sfackler/rust-postgres" }
 
 [features]
 default = ["runtime"]
@@ -46,8 +43,8 @@ parking_lot = "0.11"
 percent-encoding = "2.0"
 pin-project-lite = "0.2"
 phf = "0.8"
-postgres-protocol = { version = "0.6.0", path = "../postgres-protocol" }
-postgres-types = { version = "0.2.0", path = "../postgres-types" }
+prisma-postgres-protocol = { version = "0.6.0", path = "../postgres-protocol" }
+prisma-postgres-types = { version = "0.2.0", path = "../postgres-types" }
 socket2 = "0.3"
 tokio = { version = "1.0", features = ["io-util"] }
 tokio-util = { version = "0.6", features = ["codec"] }
